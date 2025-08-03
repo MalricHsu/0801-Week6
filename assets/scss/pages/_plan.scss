@@ -1,0 +1,40 @@
+.plan-intro {
+  background-image: url("../images/plan/banner-person.svg"),
+    url("../images/plan/banner-bg-pc.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(80%) calc(101%), center;
+  background-size: auto, cover;
+}
+
+.plan-lab {
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transform: all 0.3s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked {
+  + .plan-lab {
+    border: 2px solid $secondary;
+    &::before {
+      content: "HOT";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.2;
+      background-color: $secondary;
+      border-bottom-right-radius: 12px;
+      padding: 8px 16px;
+    }
+  }
+}
+.plan-consult {
+  background-color: $natural-95;
+}
