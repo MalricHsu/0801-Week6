@@ -1,0 +1,77 @@
+.bg-hero {
+  background-image: url("../images/index/gradient-ball.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.intro-swiper {
+  width: 100%;
+  height: auto;
+}
+
+.intro-swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-slide .card {
+  height: 100%;
+  min-height: 100%;
+}
+
+.work-havor {
+  .work-overlay {
+    background-color: #141a1f80;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+}
+
+.work-havor:hover {
+  .work-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.mb-20px {
+  margin-bottom: -20px;
+}
+
+.line-divider {
+  height: 1px;
+  background-color: $natural-85;
+  width: 72%;
+}
+
+.partner {
+  background-image: url("../images/index/gradient-ball.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 100px) calc(50% + 180px);
+  background-size: contain;
+}
+
+.service {
+  background-color: $primary;
+}
+
+.bg-qa {
+  background-image: url("../images/index/bg-grid.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.border-bottom-dashed {
+  border-bottom: 1px dashed $white;
+}
