@@ -5,6 +5,10 @@
   background-size: contain;
 }
 
+.story {
+  background: linear-gradient(to top, $natural-95 25%, transparent 25%);
+  background-color: $white;
+}
 .swiper-slide {
   height: auto;
 }

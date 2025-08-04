@@ -1,3 +1,3 @@
 import "./assets/scss/all.scss";
-import "./node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "./node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import "./all.js";

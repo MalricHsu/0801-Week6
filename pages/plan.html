@@ -14,7 +14,7 @@
   <body>
     <%- include('./layout/header-login'); -%>
     <!-- plan-banner -->
-    <section class="plan-intro py-11">
+    <section class="plan-about-intro py-11 position-relative">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12">
@@ -374,7 +374,66 @@
         </div>
       </div>
     </section>
-    <%- include('./layout/footer')-%>
+    <!-- subscription -->
+    <section class="subscription py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mb-md-8">
+            <img src="../assets/images/logo/love.png" alt="love" class="mb-1" />
+            <h3 class="fs-2 fw-bold lh-sm">持續支持方案</h3>
+          </div>
+          <div class="col-md-8">
+            <div
+              class="card bg-secondary-90 border-2 border-secondary overflow-hidden"
+            >
+              <div class="card-body p-0 text-center">
+                <div class="card-cloud-content">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        src="../assets/images/plan/subscribe-1.svg"
+                        alt="subscribe-1"
+                        class="mt-120"
+                      />
+                    </div>
+                    <div class="col-md-6 p-8">
+                      <p class="fs-4 fw-medium lh-sm mb-2">職旅會員計畫</p>
+                      <p class="fs-7 fw-medium lh mb-md-8">
+                        享有長期社群支持與資源服務
+                      </p>
+                      <div class="mb-md-8">
+                        <span class="text-primary fs-4 fw-bold lh-sm me-2"
+                          >NT$ 9,800</span
+                        >
+                        <span class="fs-7 lh me-2">/年</span>
+                        <span class="fs-7 lh fw-medium">( NT$1,200 /月)</span>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-black btn-lg fs-7 lh py-3 pe-3 d-inline-flex align-items-center justify-content-center"
+                      >
+                        我有興趣<span class="material-symbols-outlined ms-1">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        src="../assets/images/plan/subscribe-2.svg"
+                        alt="subscribe-2"
+                        class="mt-120"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tel -->
+    <%- include('./layout/tel')-%> <%- include('./layout/footer')-%>
 
     <script type="module" src="../main.js"></script>
   </body>

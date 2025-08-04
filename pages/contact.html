@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week6 職旅｜聯絡我們</title>
+    <%- include('./layout/iconlink'); -%>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-natural-95">
+    <%- include('./layout/header-login'); -%>
+    <!-- contact -->
+    <section class="contact py-11 position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 mb-md-8">
+            <h1 class="fs-2 fw-bold lh-sm text-center mb-md-6">聯絡我們</h1>
+            <p class="fs-6 lh text-natural-50 text-center">
+              每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。
+            </p>
+          </div>
+          <div class="col-md-8">
+            <div class="p-md-8 rounded-3 shadow bg-white">
+              <!-- 基本資料 -->
+              <div class="pb-md-8 border-bottom">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h2 class="fs-4 mb-3">基本資料</h2>
+                    <p class="fs-7 text-natural-50">
+                      欄位皆為<span class="ms-1 badge bg-danger">必填</span>
+                    </p>
+                  </div>
+                  <div class="col-md-8">
+                    <div>
+                      <div class="form-floating mb-5">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="contact-name"
+                          placeholder="姓名"
+                        />
+                        <label for="contact-name" class="text-black"
+                          >姓名</label
+                        >
+                      </div>
+                      <div class="form-floating mb-5">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="contact-email"
+                          placeholder="信箱"
+                        />
+                        <label for="contact-email" class="text-black"
+                          >信箱</label
+                        >
+                        <div
+                          id="contact-email"
+                          class="form-text ms-2 text-natural-50"
+                        >
+                          盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
+                        </div>
+                      </div>
+                      <div class="form-floating mb-5">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="contact-tel"
+                          placeholder="聯絡電話"
+                        />
+                        <label for="contact-tel" class="text-black"
+                          >聯絡電話</label
+                        >
+                        <div
+                          id="contact-tel"
+                          class="form-text ms-2 text-natural-50"
+                        >
+                          我們不會以電話主動聯繫您，告知您要至ATM操作轉帳
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="form-select text-start px-4 py-3"
+                          type="button"
+                          id="career-dropdown1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          目前職業/工作身份
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100"
+                          aria-labelledby="career-dropdown1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#">全職上班族</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">兼職工作者</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >自由工作者/接案者</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">數位遊牧者</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">創業者/企業主</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">待業中</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">其他</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer')-%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
