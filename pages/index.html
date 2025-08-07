@@ -14,25 +14,27 @@
   <body>
     <%- include('./layout/header-notlogin'); -%>
     <!-- banner -->
-    <section class="bg-hero mb-11">
+    <section class="bg-hero py-8 py-md-11">
       <div class="container">
-        <div class="pt-11">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <h1 class="display-1 text-center fw-bold mb-5 lh-sm">
-                一起陪伴、探索<br />還有你那些未完成的夢
-              </h1>
-              <div class="row justify-content-center align-items-center">
-                <div class="col-md-8">
-                  <p class="ms-6 fs-6 text-natural-50 lh">
-                    自由工作很美，也很難。<br />我們用 1 對 1
-                    陪伴，陪你從第一步開始，直到夢想變成日常
-                  </p>
-                </div>
-                <div class="col-md-4">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h1 class="fs-2 display-md-1 text-center fw-bold mb-5 lh-sm">
+              一起陪伴、探索<br />還有你那些未完成的夢
+            </h1>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-8">
+                <p
+                  class="ms-6 fs-md-6 fs-7 text-center text-md-start text-natural-50 lh mb-4 mb-md-0"
+                >
+                  自由工作很美，也很難。<br />我們用 1 對 1
+                  陪伴，陪你從第一步開始，直到夢想變成日常
+                </p>
+              </div>
+              <div class="col-md-4">
+                <div class="text-center text-md-end">
                   <button
                     type="button"
-                    class="btn btn-secondary btn-lg pe-3 fs-4 fw-bold ms-6"
+                    class="btn btn-secondary btn-lg pe-3 fs-4 fw-bold ms-6 btn-start"
                   >
                     開始你的職旅<span
                       class="material-symbols-outlined ms-1 align-middle"
@@ -49,7 +51,7 @@
       </div>
       <div class="container-fluid mt-7">
         <div class="row">
-          <div class="col-md-4">
+          <div class="d-none d-md-block col-md-4">
             <img
               src="../assets/images/index/hero-1.png"
               alt="hero-1"
@@ -57,7 +59,7 @@
             />
           </div>
           <div class="col-md-4">
-            <div class="d-flex flex-column">
+            <div class="d-none d-md-flex flex-md-column">
               <img
                 src="../assets/images/index/hero-2.png"
                 alt="hero-2"
@@ -70,7 +72,7 @@
               />
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <img
               src="../assets/images/index/hero-4.png"
               alt="hero-4"
@@ -81,28 +83,34 @@
       </div>
     </section>
     <!-- story -->
-    <section class="story py-11">
+    <section class="story py-md-11 py-8">
       <div class="container">
         <div class="row">
           <div
-            class="col-md-4 d-flex flex-column justify-content-center align-items-start mb-5 mb-md-0"
+            class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-start mb-5 mb-md-0"
           >
             <img
               src="../assets/images/logo/logo-icon.svg"
               alt="職旅"
-              class="img-fluid object-fit-cover mb-4 mb-md-5"
+              class="d-none d-md-block img-fluid object-fit-cover mb-md-5"
             />
-            <h2 class="fs-1 fw-bold lh-sm mb-4 mb-md-5">
+            <img
+              src="../assets/images/logo/logo-icon.svg"
+              alt="職旅"
+              class="d-block d-md-none img-fluid object-fit-cover mb-4"
+              style="width: 48; height: 42px"
+            />
+            <h2 class="fs-md-1 fs-2 fw-bold lh-sm mb-4 mb-md-5">
               他們已經踏上職旅 <br />
               聽聽他們的故事
             </h2>
-            <p class="fs-6 lh text-natural-50">
+            <p class="fs-md-6 fs-7 lh text-natural-50 mb-5 mb-md-0">
               每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活
             </p>
           </div>
-          <div class="col-md-8">
+          <div class="col-12 col-md-8">
             <div class="swiper intro-swiper">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper py-3">
                 <div
                   class="swiper-slide card overflow-hidden shadow rounded-3 border-0 position-relative"
                 >
@@ -116,13 +124,17 @@
                     >數位遊牧 2 年</span
                   >
                   <div class="card-body">
-                    <h4 class="fs-4 fw-bold lh mb-4">轉型成功的設計師</h4>
-                    <p class="fs-8 text-natural-50 lh-lg mb-5">
+                    <h4 class="fs-md-4 fs-5 fw-bold lh mb-4">
+                      轉型成功的設計師
+                    </h4>
+                    <p class="fs-8 fs-14 text-natural-50 lh-lg mb-5">
                       從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
                     </p>
-                    <div class="d-flex align-items-center mb-md-5">
-                      <p class="lh fw-bold me-2">視覺設計師</p>
-                      <p class="border-start ps-2 fs-8 lh-lg">郭敏迪 (34y)</p>
+                    <div class="d-flex align-items-center mb-md-5 mt-auto">
+                      <p class="lh fw-bold me-2 fs-14">視覺設計師</p>
+                      <p class="border-start ps-2 fs-8 lh-lg fs-14">
+                        郭敏迪 (34y)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -139,14 +151,18 @@
                     >數位遊牧 2 年</span
                   >
                   <div class="card-body">
-                    <h4 class="fs-4 fw-bold lh mb-4">數位遊牧生活實踐者</h4>
-                    <p class="fs-8 text-natural-50 lh-lg mb-5">
+                    <h4 class="fs-md-4 fs-5 fw-bold lh mb-4">
+                      數位遊牧生活實踐者
+                    </h4>
+                    <p class="fs-8 fs-14 text-natural-50 lh-lg mb-5">
                       兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多
                       20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。
                     </p>
-                    <div class="d-flex align-items-center">
-                      <p class="lh fw-bold me-2">內容策略師</p>
-                      <p class="border-start ps-2 fs-8 lh-lg">林雨潔 (29y)</p>
+                    <div class="d-flex align-items-center mb-md-5 mt-auto">
+                      <p class="lh fw-bold me-2 fs-14">內容策略師</p>
+                      <p class="border-start ps-2 fs-8 lh-lg fs-14">
+                        林雨潔 (29y)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -163,14 +179,18 @@
                     >數位遊牧 3 年</span
                   >
                   <div class="card-body">
-                    <h4 class="fs-4 fw-bold lh mb-4">中年轉型的工程師</h4>
-                    <p class="fs-8 text-natural-50 lh-lg mb-5">
+                    <h4 class="fs-md-4 fs-5 fw-bold lh mb-4">
+                      中年轉型的工程師
+                    </h4>
+                    <p class="fs-8 fs-14 text-natural-50 lh-lg mb-5">
                       59
                       歲被裁員時，我以為職涯結束了。職旅顧問不只幫我轉職，更讓我相信自己還有價值。現在我每月穩定接案、收入翻倍。年齡不是限制，只是我還沒找到對的方向。
                     </p>
-                    <div class="d-flex align-items-center">
-                      <p class="lh fw-bold me-2">系統架構顧問</p>
-                      <p class="border-start ps-2 fs-8 lh-lg">張世明 (62y)</p>
+                    <div class="d-flex align-items-center mb-md-5 mt-auto">
+                      <p class="lh fw-bold me-2 fs-14">系統架構顧問</p>
+                      <p class="border-start ps-2 fs-8 lh-lg fs-14">
+                        張世明 (62y)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -187,13 +207,17 @@
                     >數位遊牧 2 年</span
                   >
                   <div class="card-body">
-                    <h4 class="fs-4 fw-bold lh mb-4">轉型成功的設計師</h4>
-                    <p class="fs-8 text-natural-50 lh-lg mb-5">
+                    <h4 class="fs-md-4 fs-5 fw-bold lh mb-4">
+                      轉型成功的設計師
+                    </h4>
+                    <p class="fs-8 fs-14 text-natural-50 lh-lg mb-5">
                       從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
                     </p>
-                    <div class="d-flex align-items-center">
-                      <p class="lh fw-bold me-2">視覺設計師</p>
-                      <p class="border-start ps-2 fs-8 lh-lg">郭敏迪 (34y)</p>
+                    <div class="d-flex align-items-center mb-md-5 mt-auto">
+                      <p class="lh fw-bold me-2 fs-14">視覺設計師</p>
+                      <p class="border-start ps-2 fs-8 lh-lg fs-14">
+                        郭敏迪 (34y)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -210,13 +234,17 @@
                     >數位遊牧 2 年</span
                   >
                   <div class="card-body">
-                    <h4 class="fs-4 fw-bold lh mb-4">轉型成功的設計師</h4>
-                    <p class="fs-8 text-natural-50 lh-lg mb-5">
+                    <h4 class="fs-md-4 fs-5 fw-bold lh mb-4">
+                      轉型成功的設計師
+                    </h4>
+                    <p class="fs-8 fs-14 text-natural-50 lh-lg mb-5">
                       從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
                     </p>
-                    <div class="d-flex align-items-center">
-                      <p class="lh fw-bold me-2">視覺設計師</p>
-                      <p class="border-start ps-2 fs-8 lh-lg">郭敏迪 (34y)</p>
+                    <div class="d-flex align-items-center mb-md-5 mt-auto">
+                      <p class="lh fw-bold me-2 fs-14">視覺設計師</p>
+                      <p class="border-start ps-2 fs-8 lh-lg fs-14">
+                        郭敏迪 (34y)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -227,7 +255,7 @@
       </div>
     </section>
     <!-- workway -->
-    <section class="workway py-11 bg-natural-95">
+    <section class="workway py-md-11 py-8 bg-natural-95">
       <div class="container">
         <div class="row">
           <div class="col-md-4"></div>
@@ -240,7 +268,9 @@
                 alt="為什麼"
                 class="mb-1"
               />
-              <h2 class="fs-46 lh-sm fw-bold text-center">選擇職旅 WorkWay</h2>
+              <h2 class="fs-46 lh-sm fw-bold text-center mb-5 mb-md-0">
+                選擇職旅 WorkWay
+              </h2>
             </div>
           </div>
           <div class="col-md-4 mb-20px">
@@ -248,11 +278,11 @@
               <img
                 src="../assets/images/index/adv-vectors.svg"
                 alt="為什麼"
-                class=""
+                class="boywhy"
               />
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4 mb-md-0">
             <div class="card work-havor rounded-3 border-0 overflow-hidden">
               <div class="position-relative">
                 <img
@@ -281,7 +311,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4 mb-md-0">
             <div class="card work-havor rounded-3 border-0 overflow-hidden">
               <div class="position-relative">
                 <img
@@ -309,7 +339,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-8">
+          <div class="col-md-4 mb-4 mb-md-8">
             <div class="card work-havor rounded-3 border-0 overflow-hidden">
               <div class="position-relative">
                 <img
@@ -339,7 +369,7 @@
           </div>
           <div class="col-12">
             <div class="d-flex align-items-center">
-              <p class="fw-medium lh-sm text-natural-50 me-5">
+              <p class="fw-medium lh-sm text-natural-50 me-md-5 fs-14">
                 不是套模板的建議，而是為你量身打造的陪伴！
               </p>
               <div class="line-divider"></div>
@@ -349,59 +379,170 @@
       </div>
     </section>
     <!-- partner -->
-    <section class="partner py-11">
+    <section class="partner py-md-11 py-8">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 mb-5 mb-md-0">
             <img
               src="../assets/images/index/team.png"
               alt="team"
               class="rounded-2 img-fluid object-fit-cover"
             />
           </div>
-          <div class="col-md-6">
-            <h2 class="fs-1 lh-sm fw-bold mb-md-5">遇見你的職涯夥伴</h2>
-            <p class="fs-6 lh text-natural-50 mb-md-5">
+          <div class="col-12 col-md-6">
+            <h2 class="fs-md-1 fs-2 lh-sm fw-bold mb-md-5 mb-4">
+              遇見你的職涯夥伴
+            </h2>
+            <p class="fs-6 lh text-natural-50 mb-md-5 mb-4">
               每位顧問都有獨特專長，更重要的是：
             </p>
 
             <span
-              class="d-inline-block bg-natural-95 text-primary fw-bold lh-sm fs-4 p-2 mb-md-5"
+              class="d-inline-block bg-natural-95 text-primary fw-bold lh-sm fs-md-4 fs-5 p-2 mb-md-5"
             >
               “ 他們都曾面對你正在經歷的挑戰 ”
             </span>
-            <p class="fs-6 lh text-natural-50 mb-md-5">
+            <p class="fs-md-6 fs-7 lh text-natural-50 mb-md-5 mb-4">
               職旅 WorkWay
               匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。我們的顧問不只教授理論，更分享親身經歷的挑戰與解決之道。
             </p>
-            <p class="fs-6 lh text-natural-50 mb-md-5">
+            <p class="fs-md-6 fs-7 lh text-natural-50 mb-md-5 mb-4">
               我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。
             </p>
-            <button
-              type="button"
-              class="btn btn-black btn-lg pe-3 fs-7 d-flex align-items-center justify-content-center"
-              data-bs-dismiss="modal"
-            >
-              了解更多職旅夥伴<span class="material-symbols-outlined ms-1">
-                chevron_right
-              </span>
-            </button>
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <button
+                type="button"
+                class="btn btn-black d-block btn-lg pe-3 fs-7 d-flex align-items-center justify-content-center btn-more"
+              >
+                了解更多職旅夥伴<span class="material-symbols-outlined ms-1">
+                  chevron_right
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- service -->
-    <section class="service py-11">
+    <section class="service py-md-11 py-8">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="fs-1 text-white lh-sm fw-bold mb-md-5 text-center">
-              服務流程
-            </h2>
-            <p class="fs-6 text-white lh mb-md-8 text-center">
-              簡單四步，踏上你的職旅
-            </p>
+        <h2 class="fs-1 text-white lh-sm fw-bold mb-md-5 mb-4 text-center">
+          服務流程
+        </h2>
+        <p class="fs-6 text-white lh mb-md-8 mb-md-5 text-center">
+          簡單四步，踏上你的職旅
+        </p>
+        <div class="row d-none d-md-flex">
+          <div class="col-md-3">
+            <div
+              class="card overflow-hidden pt-9 pb-8 shadow rounded-3 position-relative d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="../assets/images/index/serve-1.svg"
+                alt="serve-1"
+                class="img-fluid object-fit-cover mb-md-5"
+                style="width: 160px; height: 160px"
+              />
+              <span
+                class="position-absolute bg-natural-95 text-primary top-0 start-0 py-3 px-4 fw-bold fs-8"
+                style="
+                  left: 0;
+                  width: fit-content;
+                  border-bottom-right-radius: 12px;
+                "
+                >STEP <span class="fs-6 fw-bold py-2">1</span></span
+              >
+              <div class="card-body text-center">
+                <h4 class="fs-4 fw-bold lh mb-md-5">免費註冊會員</h4>
+                <p class="fs-8 text-natural-50 lh-lg px-5">
+                  透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。
+                </p>
+              </div>
+            </div>
           </div>
+          <div class="col-md-3">
+            <div
+              class="card overflow-hidden pt-9 pb-8 shadow rounded-3 position-relative d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="../assets/images/index/serve-2.svg"
+                alt="serve-2"
+                class="img-fluid object-fit-cover mb-md-5"
+                style="width: 160px; height: 160px"
+              />
+              <span
+                class="position-absolute bg-natural-95 text-primary top-0 start-0 py-3 px-4 fw-bold fs-8"
+                style="
+                  left: 0;
+                  width: fit-content;
+                  border-bottom-right-radius: 12px;
+                "
+                >STEP <span class="fs-6 fw-bold py-2">2</span></span
+              >
+              <div class="card-body text-center">
+                <h4 class="fs-4 fw-bold lh mb-md-5">填寫職旅計劃</h4>
+                <p class="fs-8 text-natural-50 lh-lg px-5">
+                  了解你的技能、熱情與市場需求的交會點，找出屬於你的獨特定位。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card overflow-hidden pt-9 pb-8 shadow rounded-3 position-relative d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="../assets/images/index/serve-3.svg"
+                alt="serve-3"
+                class="img-fluid object-fit-cover mb-md-5"
+                style="width: 160px; height: 160px"
+              />
+              <span
+                class="position-absolute bg-natural-95 text-primary top-0 start-0 py-3 px-4 fw-bold fs-8"
+                style="
+                  left: 0;
+                  width: fit-content;
+                  border-bottom-right-radius: 12px;
+                "
+                >STEP <span class="fs-6 fw-bold py-2">3</span></span
+              >
+              <div class="card-body text-center">
+                <h4 class="fs-4 fw-bold lh mb-md-5">初次諮詢</h4>
+                <p class="fs-8 text-natural-50 lh-lg px-5">
+                  依據你的目標與現況，給予最直接的建議，建立清晰的轉型思路。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card overflow-hidden pt-9 pb-8 shadow rounded-3 position-relative d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="../assets/images/index/serve-4.svg"
+                alt="serve-4"
+                class="img-fluid object-fit-cover mb-md-5"
+                style="width: 160px; height: 160px"
+              />
+              <span
+                class="position-absolute bg-natural-95 text-primary top-0 start-0 py-3 px-4 fw-bold fs-8"
+                style="
+                  left: 0;
+                  width: fit-content;
+                  border-bottom-right-radius: 12px;
+                "
+                >STEP <span class="fs-6 fw-bold py-2">4</span></span
+              >
+              <div class="card-body text-center">
+                <h4 class="fs-4 fw-bold lh mb-md-5">實戰指導</h4>
+                <p class="fs-8 text-natural-50 lh-lg px-5">
+                  專家一對一指導，從品牌建立到客戶開發，每一步都有明確方向。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-nowrap overflow-x-auto d-md-none">
           <div class="col-md-3">
             <div
               class="card overflow-hidden pt-9 pb-8 shadow rounded-3 position-relative d-flex flex-column justify-content-center align-items-center"
@@ -526,16 +667,20 @@
                 alt="QA回答"
                 class="mb-1"
               />
-              <h2 class="fs-1 lh-sm fw-bold text-center mb-md-8">
+              <h2 class="fs-1 lh-sm fw-bold text-center mb-md-8 mb-5">
                 你可能有些困惑...
               </h2>
             </div>
           </div>
           <div class="col-md-5">
-            <img src="../assets/images/index/qa.svg" alt="qapeople" />
+            <img
+              src="../assets/images/index/qa.svg"
+              alt="qapeople"
+              class="img-fluid object-fit-cover runboy"
+            />
           </div>
           <div class="col-md-7">
-            <div class="accordion mb-md-5" id="accordion1">
+            <div class="accordion mb-md-5 mb-4" id="accordion1">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button
@@ -569,7 +714,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion mb-md-5" id="accordion2">
+            <div class="accordion mb-md-5 mb-4" id="accordion2">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                   <button
@@ -603,7 +748,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion mb-md-5" id="accordion3">
+            <div class="accordion mb-md-5 mb-4" id="accordion3">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                   <button
@@ -637,7 +782,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion mb-md-5" id="accordion4">
+            <div class="accordion mb-md-5 mb-4" id="accordion4">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                   <button
@@ -673,7 +818,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion mb-md-5" id="accordion5">
+            <div class="accordion mb-md-5 mb-4" id="accordion5">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
                   <button
