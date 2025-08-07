@@ -9,41 +9,84 @@
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
   rel="stylesheet"
 />
-    <script type="module" crossorigin src="/0801-Week6/assets/main-BFf2RbKB.js"></script>
-    <link rel="stylesheet" crossorigin href="/0801-Week6/assets/main-DmKwTLDi.css">
+    <script type="module" crossorigin src="/0801-Week6/assets/main-COK0yAFV.js"></script>
+    <link rel="stylesheet" crossorigin href="/0801-Week6/assets/main-BQ1KiscV.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-white border-bottom">
   <div class="container">
-    <a class="navbar-brand" href="index.html"
-      ><img src="/0801-Week6/assets/logo-CRTeTChE.svg" alt="logo"
-    /></a>
-    <div
-      class="collapse navbar-collapse align-items-center justify-content-center"
-    >
-      <!-- Nav -->
-      <ul class="navbar-nav">
-        <li class="nav-item me-3">
+    <a class="navbar-brand" href="index.html">
+      <img src="/0801-Week6/assets/logo-CRTeTChE.svg" alt="Workway Logo" />
+    </a>
+
+    <div class="collapse navbar-collapse d-none d-md-flex">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-2">
           <a class="nav-link" href="plan.html">服務方案</a>
         </li>
-        <li class="nav-item me-3">
+        <li class="nav-item px-2">
           <a class="nav-link" href="about.html">關於職旅</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item px-2">
           <a class="nav-link" href="contact.html">聯絡我們</a>
         </li>
       </ul>
     </div>
-    <!-- 使用者圖像 -->
-    <a href="user.html" class="align-items-center"
-      ><img
-        src="/0801-Week6/assets/avatar-QGHQ479s.png"
-        alt="登入者"
-        class="rounded-circle user-icon me-2"
-      />Mokumaru</a
-    >
+
+    <div class="d-flex align-items-center">
+      <a href="user.html" class="align-items-center"
+        ><img
+          src="/0801-Week6/assets/avatar-QGHQ479s.png"
+          alt="登入者"
+          class="rounded-circle user-icon me-2"
+        />Mokumaru</a
+      >
+
+      <button
+        class="navbar-toggler d-md-none ms-3 border-0 shadow-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileOffcanvas"
+        aria-controls="mobileOffcanvas"
+      >
+        <span class="navbar-toggler-icon text-black"></span>
+      </button>
+    </div>
   </div>
 </nav>
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="mobileOffcanvas"
+  aria-labelledby="mobileOffcanvasLabel"
+>
+  <div class="offcanvas-header position-relative">
+    <button
+      type="button"
+      class="btn-close position-absolute top-0 end-0 m-5 text-black"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+      style="width: 24px; height: 24px"
+    ></button>
+  </div>
+  <div class="offcanvas-body py-11 px-5">
+    <!-- 選單 -->
+    <div>
+      <ul class="navbar-nav text-center">
+        <li class="nav-item py-4 mb-5">
+          <a class="nav-link fs-5" href="plan.html">服務方案</a>
+        </li>
+        <li class="nav-item py-4 mb-5">
+          <a class="nav-link fs-5" href="about.html">關於職旅</a>
+        </li>
+        <li class="nav-item py-4 mb-5">
+          <a class="nav-link fs-5" href="contact.html">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
     <main class="container py-11">
       <div class="row justify-content-center">
         <div class="col-md-10">

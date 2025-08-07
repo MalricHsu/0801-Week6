@@ -13,41 +13,84 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/0801-Week6/assets/main-BFf2RbKB.js"></script>
-    <link rel="stylesheet" crossorigin href="/0801-Week6/assets/main-DmKwTLDi.css">
+    <script type="module" crossorigin src="/0801-Week6/assets/main-COK0yAFV.js"></script>
+    <link rel="stylesheet" crossorigin href="/0801-Week6/assets/main-BQ1KiscV.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-white border-bottom">
   <div class="container">
-    <a class="navbar-brand" href="index.html"
-      ><img src="/0801-Week6/assets/logo-CRTeTChE.svg" alt="logo"
-    /></a>
-    <div
-      class="collapse navbar-collapse align-items-center justify-content-center"
-    >
-      <!-- Nav -->
-      <ul class="navbar-nav">
-        <li class="nav-item me-3">
+    <a class="navbar-brand" href="index.html">
+      <img src="/0801-Week6/assets/logo-CRTeTChE.svg" alt="Workway Logo" />
+    </a>
+
+    <div class="collapse navbar-collapse d-none d-md-flex">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-2">
           <a class="nav-link" href="plan.html">服務方案</a>
         </li>
-        <li class="nav-item me-3">
+        <li class="nav-item px-2">
           <a class="nav-link" href="about.html">關於職旅</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item px-2">
           <a class="nav-link" href="contact.html">聯絡我們</a>
         </li>
       </ul>
     </div>
-    <!-- 使用者圖像 -->
-    <a href="user.html" class="align-items-center"
-      ><img
-        src="/0801-Week6/assets/avatar-QGHQ479s.png"
-        alt="登入者"
-        class="rounded-circle user-icon me-2"
-      />Mokumaru</a
-    >
+
+    <div class="d-flex align-items-center">
+      <a href="user.html" class="align-items-center"
+        ><img
+          src="/0801-Week6/assets/avatar-QGHQ479s.png"
+          alt="登入者"
+          class="rounded-circle user-icon me-2"
+        />Mokumaru</a
+      >
+
+      <button
+        class="navbar-toggler d-md-none ms-3 border-0 shadow-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileOffcanvas"
+        aria-controls="mobileOffcanvas"
+      >
+        <span class="navbar-toggler-icon text-black"></span>
+      </button>
+    </div>
   </div>
 </nav>
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="mobileOffcanvas"
+  aria-labelledby="mobileOffcanvasLabel"
+>
+  <div class="offcanvas-header position-relative">
+    <button
+      type="button"
+      class="btn-close position-absolute top-0 end-0 m-5 text-black"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+      style="width: 24px; height: 24px"
+    ></button>
+  </div>
+  <div class="offcanvas-body py-11 px-5">
+    <!-- 選單 -->
+    <div>
+      <ul class="navbar-nav text-center">
+        <li class="nav-item py-4 mb-5">
+          <a class="nav-link fs-5" href="plan.html">服務方案</a>
+        </li>
+        <li class="nav-item py-4 mb-5">
+          <a class="nav-link fs-5" href="about.html">關於職旅</a>
+        </li>
+        <li class="nav-item py-4 mb-5">
+          <a class="nav-link fs-5" href="contact.html">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
     <!-- about-banner -->
     <section class="plan-about-intro py-11 position-relative">
       <div class="container">
@@ -374,45 +417,63 @@
     <div class="row">
       <div class="col-12">
         <div class="card bg-primary">
-          <div class="card-body p-0 px-8 pb-5">
-            <div class="pt-5 pb-5 border-bottom-dashed">
+          <div class="card-body p-0 px-5 py-4 py-md-5 px-md-8 pb-5">
+            <div>
               <img
                 src="data:image/svg+xml,%3csvg%20width='40'%20height='36'%20viewBox='0%200%2040%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.8877%202.60303C35.9206%202.60303%2040.0009%206.71915%2040.001%2011.7964V21.981L40%2022.1069C39.9667%2024.5913%2038.9556%2026.839%2037.3398%2028.4731V33.6001H36.291C35.8837%2033.6%2035.4534%2033.482%2035.0703%2033.3413C34.6684%2033.1937%2034.2326%2032.9888%2033.7891%2032.7495C33.0066%2032.3274%2032.1516%2031.7724%2031.3438%2031.1626C31.2295%2031.1683%2031.1145%2031.1719%2030.999%2031.1733H25.001C22.8735%2031.1733%2020.9179%2030.4362%2019.3672%2029.2036C19.986%2028.7674%2020.5056%2028.2641%2020.9277%2027.7427C22.0762%2028.5704%2023.4819%2029.0581%2025.001%2029.0581H30.9736C31.1723%2029.0557%2031.3694%2029.0447%2031.5645%2029.0259L31.9795%2028.9858L32.3086%2029.2446C33.126%2029.8869%2034.0071%2030.4688%2034.7773%2030.8843C34.9405%2030.9723%2035.0967%2031.0508%2035.2432%2031.1206V27.5503L35.5889%2027.2349C36.1697%2026.7056%2036.6607%2026.0797%2037.04%2025.3833H27.501V23.187H37.8018C37.8632%2022.8258%2037.8983%2022.4553%2037.9033%2022.0776L37.9043%2021.981V20.3384H29.9199V18.1421H37.9043V15.2954H32.0967V13.0991H37.9043V11.7964C37.9042%207.88738%2034.7626%204.71826%2030.8877%204.71826H25.001C24.9537%204.71826%2024.9064%204.72025%2024.8594%204.72119C24.6403%203.99556%2024.338%203.30677%2023.9668%202.66357C24.3063%202.62489%2024.6513%202.60303%2025.001%202.60303H30.8877Z'%20fill='%23FCFCFD'/%3e%3cpath%20d='M15.2422%200C19.2806%200.000117114%2022.6524%202.88007%2023.4502%206.71484C24.6213%2010.6795%2025.9625%2017.7485%2025.9678%2017.7764H21.8545V19.9727H17.9844C17.9844%2021.315%2019.324%2023.1582%2021.0898%2023.1582C21.0898%2024.6226%2019.0483%2028.3936%2014.5967%2028.3936H8.38672C3.75485%2028.3934%200.00013738%2024.6053%200%2019.9326V8.46094C7.60327e-05%203.78818%203.75481%200.000176942%208.38672%200H15.2422ZM17.9033%209.43652C17.0127%209.43652%2016.2903%2010.165%2016.29%2011.0635C16.29%2011.9621%2017.0125%2012.6914%2017.9033%2012.6914C18.7941%2012.6913%2019.5166%2011.9621%2019.5166%2011.0635C19.5164%2010.1651%2018.7939%209.43658%2017.9033%209.43652Z'%20fill='%23FCFCFD'/%3e%3c/svg%3e"
                 alt="logo"
                 class="mb-5"
               />
-              <h3 class="text-white fs-2 fw-bold lh-sm mb-3">
+              <h3 class="text-white fs-3 fs-md-2 fw-bold lh-sm mb-3">
                 邁向你真正想過的生活，從這裡開始
               </h3>
-              <p class="text-white fs-6 lh">
+              <p
+                class="text-white fs-6 lh border-bottom-dashed pb-5 mb-4 mb-md-5"
+              >
                 第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式
               </p>
-            </div>
-            <div class="d-flex justify-content-between">
-              <div>
-                <p
-                  class="mt-5 fs-5 text-white mb-4 fw-medium d-flex align-items-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-white me-2 fw-medium"
-                  >
-                    call </span
-                  >0800-123-123<span class="me-5"></span
-                  ><span
-                    class="material-symbols-outlined text-white me-2 fw-medium"
-                  >
-                    mail </span
-                  >Sample@mail.com
-                </p>
-              </div>
-              <a
-                href="#"
-                class="btn btn-black btn-lg mt-md-5 fs-7 lh py-3 pe-3 d-inline-flex align-items-center justify-content-center"
+
+              <!-- 聯絡電話 -->
+              <div
+                class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between"
               >
-                預約免費職涯探索<span class="material-symbols-outlined ms-1">
-                  chevron_right
-                </span>
-              </a>
+                <div class="d-flex flex-column flex-md-row mb-6 mb-md-0">
+                  <div class="d-flex align-items-center mb-4 mb-md-0">
+                    <span
+                      class="material-symbols-outlined text-white me-2 fw-medium"
+                    >
+                      call
+                    </span>
+                    <span
+                      class="text-white fw-medium fs-6 fs-md-5 lh-sm me-md-5"
+                    >
+                      0800-123-123
+                    </span>
+                  </div>
+                  <div class="d-flex align-items-centerfs-6 fs-md-5 mb-md-0">
+                    <span
+                      class="material-symbols-outlined text-white me-2 fw-medium"
+                    >
+                      mail
+                    </span>
+                    <span class="text-white fw-medium fs-5 lh-sm"
+                      >Sample@mail.com</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-black pe-2 pe-md-3 fs-7 d-flex align-items-center justify-content-center"
+                  >
+                    預約免費職涯探索<span
+                      class="material-symbols-outlined ms-1"
+                    >
+                      chevron_right
+                    </span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -426,27 +487,29 @@
       <div class="col-12 col-md-6">
         <ul class="navbar-nav flex-wrap flex-row justify-content-center py-8">
           <li class="nav-item">
-            <a class="nav-link d-inline-block mb-md-0 mb-2" href="#"
+            <a class="nav-link d-inline-block mb-md-0 mb-2" href="plan.html"
               >服務方案</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block mb-md-0 mb-2" href="#"
+            <a class="nav-link d-inline-block mb-md-0 mb-2" href="about.html"
               >關於職旅</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block mb-md-0 mb-2" href="#"
+            <a class="nav-link d-inline-block mb-md-0 mb-2" href="contact.html"
               >聯絡我們</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block mb-md-0 mb-2" href="#"
+            <a class="nav-link d-inline-block mb-md-0 mb-2" href="private.html"
               >隱私權政策</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block mb-md-0 mb-2" href="#"
+            <a
+              class="nav-link d-inline-block mb-md-0 mb-2"
+              href="user-rule.html"
               >用戶條款</a
             >
           </li>
