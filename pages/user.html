@@ -7,19 +7,19 @@
     <title>Week6 職旅｜會員專區</title>
     <%- include('./layout/iconlink'); -%>
   </head>
-  <body>
+  <body class="bg-natural-95">
     <%- include('./layout/header-login'); -%>
-    <main class="container py-11">
+    <main class="container py-md-11 py-8">
       <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-12 col-md-10">
           <ul
-            class="nav nav-pills mb-4 justify-content-center"
+            class="nav nav-pills mb-md-5 mb-4 justify-content-center flex-nowrap"
             id="pills-tab"
             role="tablist"
           >
-            <li class="nav-item me-4" role="presentation">
+            <li class="nav-item me-md-5 me-4" role="presentation">
               <button
-                class="nav-link d-flex align-button py-12 px-20 active"
+                class="nav-link d-flex align-button fs-14 py-3 px-3 px-md-20 active"
                 id="pills-home-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#user-info"
@@ -28,13 +28,14 @@
                 aria-controls="pills-home"
                 aria-selected="true"
               >
-                <span class="material-symbols-outlined me-1"> face </span
+                <span class="material-symbols-outlined me-md-1 me-0">
+                  face </span
                 >個人資料
               </button>
             </li>
-            <li class="nav-item me-4" role="presentation">
+            <li class="nav-item me-md-5 me-4" role="presentation">
               <button
-                class="nav-link d-flex align-button py-12 px-20"
+                class="nav-link d-flex align-button fs-14 py-3 px-3 px-md-20"
                 id="pills-profile-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#user-booking"
@@ -43,14 +44,14 @@
                 aria-controls="pills-profile"
                 aria-selected="false"
               >
-                <span class="material-symbols-outlined ms-1">
+                <span class="material-symbols-outlined me-md-1 me-0">
                   pending_actions </span
                 >預約紀錄
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link d-flex align-button py-12 px-20"
+                class="nav-link d-flex align-button fs-14 py-3 px-3 px-md-20"
                 id="pills-contact-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#user-plan"
@@ -59,7 +60,8 @@
                 aria-controls="pills-contact"
                 aria-selected="false"
               >
-                <span class="material-symbols-outlined me-1"> list_alt </span
+                <span class="material-symbols-outlined me-md-1 me-0">
+                  list_alt </span
                 >職旅計劃
               </button>
             </li>
@@ -73,31 +75,33 @@
               aria-labelledby="pills-home-tab"
             >
               <div class="card shadow">
-                <div class="card-body p-8">
+                <div class="card-body p-md-8 p-5">
                   <div class="row">
                     <div class="col-md-3">
-                      <h2 class="fs-4 lh-sm fw-medium">個人資料</h2>
+                      <h2 class="fs-4 fs-5 lh-sm fw-medium mb-4 mb-md-0">
+                        個人資料
+                      </h2>
                     </div>
-                    <div class="col-9">
+                    <div class="col-md-9">
                       <!-- 個人圖片 -->
-                      <div class="mb-4 d-flex align-items-end">
+                      <div class="mb-md-5 mb-4 d-flex align-items-end">
                         <img
                           src="../assets/images/user/avatar.png"
                           alt="個人資料"
                           class="rounded-circle me-4"
                         />
                         <label
-                          class="btn btn-lg py-3 fs-7 lh btn-outline-natural-90 d-inline-flex align-button text-black"
+                          class="btn btn-lg py-3 px-3 px-20 fs-7 fs-14 lh btn-outline-natural-90 d-inline-flex align-button text-black"
                         >
                           <span class="material-symbols-outlined">
                             upload
                           </span>
-                          <span class="ps-1">上傳檔案</span>
+                          <span class="ps-md-1 ps-0">上傳檔案</span>
                           <input type="file" hidden />
                         </label>
                       </div>
                       <!-- 姓名 -->
-                      <div class="form-floating mb-md-5">
+                      <div class="form-floating mb-md-5 mb-4">
                         <input
                           type="text"
                           class="form-control"
@@ -108,12 +112,12 @@
                         <label for="name-text">姓名</label>
                       </div>
                       <!-- 性別 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <p class="fs-7 lh mb-2">性別</p>
                         <div class="ps-2">
                           <div class="form-check form-check-inline">
                             <input
-                              class="form-check-input me-1"
+                              class="form-check-input me-md-1 me-0"
                               type="radio"
                               name="sex-status"
                               id="sex-Radio1"
@@ -151,7 +155,7 @@
                         </div>
                       </div>
                       <!-- 生日 -->
-                      <div class="form-floating mb-md-5">
+                      <div class="form-floating mb-md-5 mb-4">
                         <input
                           type="date"
                           class="form-control"
@@ -161,11 +165,11 @@
                         <label for="birth-text">生日</label>
                       </div>
                       <!-- 密碼 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <p class="mb-2">密碼</p>
                         <button
                           type="button"
-                          class="fs-7 btn btn-outline-natural-90 btn-lg py-3 d-inline-flex align-button text-black"
+                          class="fs-7 btn btn-outline-natural-90 btn-lg px-20 px-3 py-3 d-inline-flex align-button text-black"
                           data-bs-toggle="modal"
                           data-bs-target="#change-password"
                         >
@@ -231,8 +235,8 @@
                         </div>
                       </div>
                       <!-- 信箱 -->
-                      <div class="mb-md-5">
-                        <div class="form-floating mb-3">
+                      <div class="mb-md-5 mb-4">
+                        <div class="form-floating">
                           <input
                             type="email"
                             class="form-control"
@@ -243,14 +247,14 @@
                           <label for="email-text">信箱</label>
                           <div
                             id="email-text"
-                            class="form-text ms-2 text-natural-50"
+                            class="form-text fs-14 ms-2 text-natural-50"
                           >
                             盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
                           </div>
                         </div>
                       </div>
                       <!-- 聯絡電話 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating mb-3">
                           <input
                             type="tel"
@@ -262,8 +266,8 @@
                           <label for="tel-text">聯絡電話</label>
                         </div>
                       </div>
-                      <!-- 聯絡電話 -->
-                      <div class="mb-md-8">
+                      <!-- 通訊地址 -->
+                      <div class="mb-md-8 pb-11 pb-md-0">
                         <div class="form-floating mb-3">
                           <input
                             type="text"
@@ -277,10 +281,12 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <div class="text-center">
+                      <div
+                        class="d-flex flex-column flex-md-row justify-content-md-center"
+                      >
                         <button
                           type="button"
-                          class="fs-7 btn btn-outline-natural-90 btn-lg py-3 d-inline-flex align-button text-black me-5"
+                          class="fs-7 fs-14 btn btn-outline-natural-90 btn-lg py-3 d-inline-flex justify-content-center align-items-center text-black me-md-5 mb-4 mb-md-0"
                           data-bs-toggle="modal"
                           data-bs-target="#change-password"
                         >
@@ -290,7 +296,7 @@
                         </button>
                         <button
                           type="button"
-                          class="btn btn-black btn-lg py-3 fs-7 d-inline-flex align-button border"
+                          class="btn btn-black btn-lg py-3 fs-7 fs-14 d-inline-flex justify-content-center align-items-center border"
                         >
                           儲存更新<span class="material-symbols-outlined ms-1">
                             chevron_right
@@ -309,13 +315,15 @@
               role="tabpanel"
               aria-labelledby="pills-profile-tab"
             >
-              <div class="card p-8 shadow">
-                <div class="card-body">
+              <div class="card shadow">
+                <div class="card-body p-md-8 p-5">
                   <!-- 預約紀錄的3大格 -->
-                  <div class="mb-md-8">
-                    <h2 class="fs-4 fw-medium mb-md-5">預約紀錄</h2>
+                  <div class="mb-md-8 mb-5">
+                    <h2 class="fs-md-4 fs-5 fw-medium mb-md-5 mb-4">
+                      預約紀錄
+                    </h2>
                     <div class="row row-cols-3 g-5">
-                      <div class="col">
+                      <div class="col d-none d-md-block">
                         <div class="card h-100">
                           <div class="card-body py-4 text-center">
                             <h3 class="fs-2 fw-bold lh-sm text-primary mb-2">
@@ -325,7 +333,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col">
+                      <div class="col d-none d-md-block">
                         <div class="card h-100">
                           <div class="card-body py-4 text-center">
                             <h3 class="fs-2 fw-bold lh-sm text-primary mb-2">
@@ -335,7 +343,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col">
+                      <div class="col d-none d-md-block">
                         <div class="card h-100">
                           <div class="card-body py-4 text-center">
                             <h3 class="fs-2 fw-bold lh-sm text-primary mb-2">
@@ -345,33 +353,43 @@
                           </div>
                         </div>
                       </div>
+                      <div class="col-12 d-md-none">
+                        <div class="card h-100">
+                          <div class="card-body py-4 text-center">
+                            <h3 class="fs-2 fw-bold lh-sm text-primary mb-2">
+                              2025/10/10
+                            </h3>
+                            <p class="fs-6 lh text-natural-50">即將到來</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <!-- 篩選按鈕 -->
-                  <div class="d-flex justify-content-between mb-md-5">
+                  <div class="d-flex justify-content-between mb-md-5 mb-4">
                     <!-- 預約按鈕 -->
                     <div>
                       <button
                         type="button"
-                        class="btn btn-lg py-3 fs-7 btn-black me-2"
+                        class="btn btn-lg py-3 px-20 px-3 fs-7 fs-14 btn-black"
                       >
                         全部預約
                       </button>
                       <button
                         type="button"
-                        class="btn btn-outline-natural-85 btn-lg py-3 fs-7 me-2 border text-black"
+                        class="btn btn-outline-natural-85 btn-lg py-3 px-20 px-3 fs-7 fs-14 border text-black"
                       >
                         已完成
                       </button>
                       <button
                         type="button"
-                        class="btn btn-outline-natural-85 btn-lg py-3 fs-7 me-2 border text-black"
+                        class="btn btn-outline-natural-85 btn-lg py-3 px-20 px-3 fs-7 fs-14 border text-black"
                       >
                         已取消
                       </button>
                     </div>
                     <!-- 篩選 -->
-                    <div class="dropdown">
+                    <div class="dropdown d-none d-md-block">
                       <button
                         class="btn btn-outline-natural-85 d-flex btn-lg py-3 fs-7 text-black"
                         type="button"
@@ -395,101 +413,295 @@
                         </li>
                       </ul>
                     </div>
+                    <div class="dropdown d-md-none">
+                      <button
+                        class="btn btn-outline-natural-85 d-flex btn-lg py-3 fs-7 text-black border-0"
+                        type="button"
+                        id="filter-booking"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="material-symbols-outlined ms-1">
+                          filter_list
+                        </span>
+                      </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="filter-booking"
+                      >
+                        <li class="py-2">
+                          <a class="dropdown-item" href="#">新到舊</a>
+                        </li>
+                        <li class="py-2">
+                          <a class="dropdown-item" href="#">舊到新</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- 表格 -->
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="fs-8 fw-medium">諮詢方案</th>
-                        <th scope="col" class="fs-8 fw-medium">預約日期</th>
-                        <th scope="col" class="fs-8 fw-medium">預約時長</th>
-                        <th scope="col" class="fs-8 fw-medium">諮詢方式</th>
-                        <th scope="col" class="fs-8 fw-medium">上課狀態</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="py-4">職涯定位-職涯探索包 | 6/6堂</td>
-                        <td class="py-4">2025/11/11</td>
-                        <td class="py-4">60分鐘</td>
-                        <td class="py-4">
-                          <span
-                            class="badge bg-light border text-natural-50 fs-8 fw-medium"
-                            >視訊</span
+                  <div class="d-none d-md-block">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="fs-8 fw-medium">諮詢方案</th>
+                          <th scope="col" class="fs-8 fw-medium">預約日期</th>
+                          <th scope="col" class="fs-8 fw-medium">預約時長</th>
+                          <th scope="col" class="fs-8 fw-medium">諮詢方式</th>
+                          <th scope="col" class="fs-8 fw-medium">上課狀態</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-4">職涯定位-職涯探索包 | 6/6堂</td>
+                          <td class="py-4">2025/11/11</td>
+                          <td class="py-4">60分鐘</td>
+                          <td class="py-4">
+                            <span
+                              class="badge bg-light border text-natural-50 fs-8 fw-medium"
+                              >視訊</span
+                            >
+                          </td>
+                          <td class="py-4">等待上課</td>
+                        </tr>
+                        <tr>
+                          <td class="py-4">職涯定位-職涯探索包 | 5/6堂</td>
+                          <td class="py-4">2025/10/10</td>
+                          <td class="py-4">60分鐘</td>
+                          <td class="py-4">
+                            <span
+                              class="badge bg-light border text-natural-50 fs-8 fw-medium"
+                              >視訊</span
+                            >
+                          </td>
+                          <td class="py-4">等待上課</td>
+                        </tr>
+                        <tr>
+                          <td class="py-4 text-natural-60">
+                            職涯定位-職涯探索包 | 4/6堂
+                          </td>
+                          <td class="py-4 text-natural-60">2025/09/09</td>
+                          <td class="py-4 text-natural-60">60分鐘</td>
+                          <td class="py-4">
+                            <span
+                              class="badge bg-light border text-natural-50 fs-8 fw-medium"
+                              >視訊</span
+                            >
+                          </td>
+                          <td class="py-4 text-natural-60">已完成</td>
+                        </tr>
+                        <tr>
+                          <td class="py-4 text-natural-60">
+                            職涯定位-職涯探索包 | 3/6堂
+                          </td>
+                          <td class="py-4 text-natural-60">2025/08/08</td>
+                          <td class="py-4 text-natural-60">60分鐘</td>
+                          <td class="py-4">
+                            <span
+                              class="badge bg-light border text-natural-50 fs-8 fw-medium"
+                              >面對面</span
+                            >
+                          </td>
+                          <td class="py-4 text-natural-60">已完成</td>
+                        </tr>
+                        <tr>
+                          <td class="py-4 text-natural-60">
+                            職涯定位-職涯探索包 | 2/6堂
+                          </td>
+                          <td class="py-4 text-natural-60">2025/07/07</td>
+                          <td class="py-4 text-natural-60">60分鐘</td>
+                          <td class="py-4">
+                            <span
+                              class="badge bg-light border text-natural-50 fs-8 fw-medium"
+                              >面對面</span
+                            >
+                          </td>
+                          <td class="py-4 text-natural-60">已完成</td>
+                        </tr>
+                        <tr>
+                          <td class="py-4 text-natural-60">
+                            職涯定位-職涯探索包 | 1/6堂
+                          </td>
+                          <td class="py-4 text-natural-60">2025/06/06</td>
+                          <td class="py-4 text-natural-60">90分鐘</td>
+                          <td class="py-4">
+                            <span
+                              class="badge bg-light border text-natural-50 fs-8 fw-medium"
+                              >面對面</span
+                            >
+                          </td>
+                          <td class="py-4 text-natural-60">已完成</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- 響應式 -->
+                  <div class="d-md-none">
+                    <h3 class="fs-14 ps-2 fw-medium pb-4 border-bottom">
+                      預約紀錄一覽
+                    </h3>
+                    <div class="d-flex flex-column">
+                      <div
+                        class="card bg-white rounded-0 border-0 border-bottom"
+                      >
+                        <div class="card-body d-flex flex-column p-2">
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-2"
                           >
-                        </td>
-                        <td class="py-4">等待上課</td>
-                      </tr>
-                      <tr>
-                        <td class="py-4">職涯定位-職涯探索包 | 5/6堂</td>
-                        <td class="py-4">2025/10/10</td>
-                        <td class="py-4">60分鐘</td>
-                        <td class="py-4">
-                          <span
-                            class="badge bg-light border text-natural-50 fs-8 fw-medium"
-                            >視訊</span
+                            <p class="fs-7 py-3 mb-0">
+                              職涯定位-職涯探索包 | 6/6堂
+                            </p>
+                            <span
+                              class="badge bg-natural-95 border text-natural-60 fw-medium rounded-pill"
+                              >視訊</span
+                            >
+                          </div>
+                          <div class="d-flex py-3 pe-2 text-natural-60">
+                            <div class="me-4">
+                              <span class="fs-14">時間 :</span>
+                              <span class="fs-14">2025/11/11</span>
+                            </div>
+                            <div>
+                              <span class="fs-14">時長 :</span>
+                              <span class="fs-14">60分鐘</span>
+                            </div>
+                          </div>
+                          <div class="fs-14 text-natural-60 py-3">等待上課</div>
+                        </div>
+                        <div class="bg-natural-95">
+                          <div class="card-body d-flex flex-column p-2">
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-2"
+                            >
+                              <p class="fs-7 py-3 mb-0">
+                                職涯定位-職涯探索包 | 5/6堂
+                              </p>
+                              <span
+                                class="badge bg-natural-95 border text-natural-60 fw-medium rounded-pill"
+                                >視訊</span
+                              >
+                            </div>
+                            <div class="d-flex py-3 pe-2 text-natural-60">
+                              <div class="me-4">
+                                <span class="fs-14">時間 :</span>
+                                <span class="fs-14">2025/10/10</span>
+                              </div>
+                              <div>
+                                <span class="fs-14">時長 :</span>
+                                <span class="fs-14">60分鐘</span>
+                              </div>
+                            </div>
+                            <div class="fs-14 text-natural-60 py-3">
+                              等待上課
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body d-flex flex-column p-2">
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-2"
                           >
-                        </td>
-                        <td class="py-4">等待上課</td>
-                      </tr>
-                      <tr>
-                        <td class="py-4 text-natural-60">
-                          職涯定位-職涯探索包 | 4/6堂
-                        </td>
-                        <td class="py-4 text-natural-60">2025/09/09</td>
-                        <td class="py-4 text-natural-60">60分鐘</td>
-                        <td class="py-4">
-                          <span
-                            class="badge bg-light border text-natural-50 fs-8 fw-medium"
-                            >視訊</span
+                            <p class="fs-7 py-3 mb-0 text-natural-60">
+                              職涯定位-職涯探索包 | 4/6堂
+                            </p>
+                            <span
+                              class="badge bg-natural-95 border text-natural-60 fw-medium rounded-pill"
+                              >視訊</span
+                            >
+                          </div>
+                          <div class="d-flex py-3 pe-2 text-natural-60">
+                            <div class="me-4">
+                              <span class="fs-14">時間 :</span>
+                              <span class="fs-14">2025/09/09</span>
+                            </div>
+                            <div>
+                              <span class="fs-14">時長 :</span>
+                              <span class="fs-14">60分鐘</span>
+                            </div>
+                          </div>
+                          <div class="fs-14 text-natural-50 py-3">等待上課</div>
+                        </div>
+                        <div class="bg-natural-95">
+                          <div class="card-body d-flex flex-column p-2">
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-2"
+                            >
+                              <p class="fs-7 py-3 mb-0 text-natural-60">
+                                職涯定位-職涯探索包 | 3/6堂
+                              </p>
+                              <span
+                                class="badge bg-natural-95 border text-natural-50 fw-medium rounded-pill"
+                                >面對面</span
+                              >
+                            </div>
+                            <div class="d-flex py-3 pe-2 text-natural-60">
+                              <div class="me-4">
+                                <span class="fs-14">時間 :</span>
+                                <span class="fs-14">2025/08/08</span>
+                              </div>
+                              <div>
+                                <span class="fs-14">時長 :</span>
+                                <span class="fs-14">60分鐘</span>
+                              </div>
+                            </div>
+                            <div class="fs-14 text-natural-60 py-3">
+                              等待上課
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body d-flex flex-column p-2">
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-2"
                           >
-                        </td>
-                        <td class="py-4 text-natural-60">已完成</td>
-                      </tr>
-                      <tr>
-                        <td class="py-4 text-natural-60">
-                          職涯定位-職涯探索包 | 3/6堂
-                        </td>
-                        <td class="py-4 text-natural-60">2025/08/08</td>
-                        <td class="py-4 text-natural-60">60分鐘</td>
-                        <td class="py-4">
-                          <span
-                            class="badge bg-light border text-natural-50 fs-8 fw-medium"
-                            >面對面</span
-                          >
-                        </td>
-                        <td class="py-4 text-natural-60">已完成</td>
-                      </tr>
-                      <tr>
-                        <td class="py-4 text-natural-60">
-                          職涯定位-職涯探索包 | 2/6堂
-                        </td>
-                        <td class="py-4 text-natural-60">2025/07/07</td>
-                        <td class="py-4 text-natural-60">60分鐘</td>
-                        <td class="py-4">
-                          <span
-                            class="badge bg-light border text-natural-50 fs-8 fw-medium"
-                            >面對面</span
-                          >
-                        </td>
-                        <td class="py-4 text-natural-60">已完成</td>
-                      </tr>
-                      <tr>
-                        <td class="py-4 text-natural-60">
-                          職涯定位-職涯探索包 | 1/6堂
-                        </td>
-                        <td class="py-4 text-natural-60">2025/06/06</td>
-                        <td class="py-4 text-natural-60">90分鐘</td>
-                        <td class="py-4">
-                          <span
-                            class="badge bg-light border text-natural-50 fs-8 fw-medium"
-                            >面對面</span
-                          >
-                        </td>
-                        <td class="py-4 text-natural-60">已完成</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                            <p class="fs-7 py-3 mb-0 text-natural-60">
+                              職涯定位-職涯探索包 | 2/6堂
+                            </p>
+                            <span
+                              class="badge bg-natural-95 border text-natural-60 fw-medium rounded-pill"
+                              >面對面</span
+                            >
+                          </div>
+                          <div class="d-flex py-3 pe-2 text-natural-60">
+                            <div class="me-4">
+                              <span class="fs-14">時間 :</span>
+                              <span class="fs-14">2025/07/07</span>
+                            </div>
+                            <div>
+                              <span class="fs-14">時長 :</span>
+                              <span class="fs-14">60分鐘</span>
+                            </div>
+                          </div>
+                          <div class="fs-14 text-natural-50 py-3">等待上課</div>
+                        </div>
+                        <div class="bg-natural-95">
+                          <div class="card-body d-flex flex-column p-2">
+                            <div
+                              class="d-flex justify-content-between align-items-center mb-2"
+                            >
+                              <p class="fs-7 py-3 mb-0 text-natural-60">
+                                職涯定位-職涯探索包 | ㄅ/6堂
+                              </p>
+                              <span
+                                class="badge bg-natural-95 border text-natural-50 fw-medium rounded-pill"
+                                >面對面</span
+                              >
+                            </div>
+                            <div class="d-flex py-3 pe-2 text-natural-60">
+                              <div class="me-4">
+                                <span class="fs-14">時間 :</span>
+                                <span class="fs-14">2025/06/06</span>
+                              </div>
+                              <div>
+                                <span class="fs-14">時長 :</span>
+                                <span class="fs-14">90分鐘</span>
+                              </div>
+                            </div>
+                            <div class="fs-14 text-natural-60 py-3">
+                              等待上課
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -500,23 +712,27 @@
               role="tabpanel"
               aria-labelledby="pills-contact-tab"
             >
-              <div class="card p-8 shadow">
+              <div class="card shadow">
                 <!-- 職旅計劃概況 -->
-                <div class="card-body border-bottom">
-                  <div class="row">
-                    <div class="col-3">
-                      <h2 class="fs-4 mb-3 fw-medium">職旅計劃概況</h2>
-                      <p class="text-natural-50">
+                <div class="card-body p-md-8 p-5">
+                  <div class="row border-bottom">
+                    <div
+                      class="col-md-3 d-flex justify-content-between d-md-block"
+                    >
+                      <h2 class="fs-md-4 fs-5 mb-md-3 mb-4 fw-medium">
+                        職旅計劃概況
+                      </h2>
+                      <p class="fs-14 text-natural-50">
                         欄位皆為<span class="ms-1 badge rounded-1 bg-danger"
                           >必填</span
                         >
                       </p>
                     </div>
-                    <div class="col-9">
+                    <div class="col-md-9">
                       <!-- 職業狀態 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <p class="mb-2">目前職業狀態</p>
-                        <div class="ps-2">
+                        <div class="ps-2 fs-14">
                           <div class="form-check form-check-inline mb-2">
                             <input
                               class="form-check-input me-1"
@@ -619,7 +835,7 @@
                         </div>
                       </div>
                       <!-- 工作產業 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="dropdown">
                           <button
                             class="form-select text-start py-4 ps-3"
@@ -665,7 +881,7 @@
                         </div>
                       </div>
                       <!-- 工作年資 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="dropdown">
                           <button
                             class="form-select text-start py-3 ps-2"
@@ -699,9 +915,9 @@
                         </div>
                       </div>
                       <!-- 月收入區間 -->
-                      <div class="mb-md-5">
-                        <p class="mb-2">月收入區間</p>
-                        <div class="ms-2">
+                      <div class="mb-md-5 mb-4">
+                        <p class="mb-2 fs-14">月收入區間</p>
+                        <div class="ms-2 fs-14">
                           <div class="form-check form-check-inline mb-1">
                             <input
                               class="form-check-input"
@@ -790,7 +1006,7 @@
                         </div>
                       </div>
                       <!-- 職業摘要 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -806,7 +1022,7 @@
                         </div>
                       </div>
                       <!-- 作品案例展示 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -817,10 +1033,10 @@
                         </div>
                       </div>
                       <!-- 附件檔案 -->
-                      <div class="mb-5">
-                        <p class="mb-2">附件檔案</p>
+                      <div class="mb-md-8 mb-5">
+                        <p class="mb-2 fs-14">附件檔案</p>
                         <label
-                          class="btn btn-outline-natural-85 btn-lg fs-7 py-3 text-black d-inline-flex align-button border"
+                          class="btn btn-outline-natural-85 btn-lg fs-7 fs-14 px-3 px-20 py-3 text-black d-inline-flex align-button border"
                         >
                           <span class="material-symbols-outlined me-1">
                             upload
@@ -833,11 +1049,15 @@
                   </div>
                 </div>
                 <!-- 職涯規劃 -->
-                <div class="card-body pt-md-8 border-bottom">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h2 class="fs-4 mb-3 fw-medium">職涯規劃</h2>
-                      <p class="text-natural-50">
+                <div class="card-body p-0 px-5 px-md-8">
+                  <div class="row border-bottom">
+                    <div
+                      class="col-md-3 d-flex justify-content-between d-md-block"
+                    >
+                      <h2 class="fs-md-4 fs-5 mb-md-3 mb-4 fw-medium">
+                        職涯規劃
+                      </h2>
+                      <p class="fs-14 text-natural-50">
                         欄位皆為<span class="ms-1 badge rounded-1 bg-danger"
                           >必填</span
                         >
@@ -846,7 +1066,7 @@
 
                     <div class="col-md-9">
                       <!-- 1 年短期職涯目標（最多 300 字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -861,7 +1081,7 @@
                         </div>
                       </div>
                       <!-- 1-3 年中長期職涯願景（最多 300 字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -876,9 +1096,9 @@
                         </div>
                       </div>
                       <!-- 理想工作模式 -->
-                      <div class="mb-md-5">
-                        <p class="mb-2">理想工作模式</p>
-                        <div class="ps-2">
+                      <div class="mb-md-5 mb-4">
+                        <p class="mb-2 fs-14">理想工作模式</p>
+                        <div class="ps-2 fs-14">
                           <div class="form-check form-check-inline mb-2">
                             <input
                               class="form-check-input"
@@ -953,7 +1173,7 @@
                         </div>
                       </div>
                       <!-- 目標薪資/收入 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -964,9 +1184,9 @@
                         </div>
                       </div>
                       <!-- 目前面臨的職涯挑戰 -->
-                      <div class="mb-md-5">
-                        <p class="mb-2">目前面臨的職涯挑戰</p>
-                        <div class="ps-2">
+                      <div class="mb-md-5 mb-4">
+                        <p class="mb-2 fs-14">目前面臨的職涯挑戰</p>
+                        <div class="ps-2 fs-14">
                           <div class="form-check form-check-inline mb-2">
                             <input
                               class="form-check-input me-1"
@@ -1058,9 +1278,9 @@
                         </div>
                       </div>
                       <!-- 期望獲得的協助與資源 -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <p class="mb-2">目前面臨的職涯挑戰</p>
-                        <div class="ps-2">
+                        <div class="ps-2 fs-14">
                           <div class="form-check form-check-inline mb-2">
                             <input
                               class="form-check-input me-1"
@@ -1163,9 +1383,9 @@
                         </div>
                       </div>
                       <!-- 感興趣的服務方案 -->
-                      <div class="mb-md-5">
-                        <p class="mb-2">感興趣的服務方案</p>
-                        <div class="ps-2">
+                      <div class="mb-md-8 mb-5">
+                        <p class="mb-2 fs-14">感興趣的服務方案</p>
+                        <div class="ps-2 fs-14">
                           <div class="form-check form-check-inline mb-2">
                             <input
                               class="form-check-input me-1"
@@ -1205,17 +1425,22 @@
                   </div>
                 </div>
                 <!-- 專業技能區塊 -->
-                <div class="card-body pt-md-5 border-bottom">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h2 class="fs-4 mb-3 fw-medium">專業技能區塊</h2>
-                      <p class="text-natural-50">欄位皆為選填</p>
+                <div class="card-body p-0 p-5 p-md-8">
+                  <div class="row border-bottom">
+                    <div
+                      class="col-md-3 d-flex justify-content-between d-md-block"
+                    >
+                      <h2 class="fs-md-4 fs-5 mb-md-3 mb-4 fw-medium">
+                        專業技能區塊
+                      </h2>
+                      <p class="fs-14 text-natural-50">欄位皆為選填</p>
                     </div>
+
                     <div class="col-md-9">
                       <!-- 核心專業領域 -->
-                      <div class="mb-md-5">
-                        <p class="mb-2">目前面臨的職涯挑戰</p>
-                        <div class="ps-2">
+                      <div class="mb-md-5 mb-4">
+                        <p class="mb-2 fs-14">目前面臨的職涯挑戰</p>
+                        <div class="ps-2 fs-14">
                           <div class="form-check form-check-inline mb-2">
                             <input
                               class="form-check-input me-1"
@@ -1329,7 +1554,7 @@
                         </div>
                       </div>
                       <!-- 專業背景和核心競爭力（最多300字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1344,7 +1569,7 @@
                         </div>
                       </div>
                       <!-- 專業技能（最多300字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1359,7 +1584,7 @@
                         </div>
                       </div>
                       <!-- 語文能力（最多300字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1372,7 +1597,7 @@
                         </div>
                       </div>
                       <!-- 資格證照（最多300字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-8 mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1390,15 +1615,20 @@
                   </div>
                 </div>
                 <!-- 教育背景 -->
-                <div class="card-body pt-md-5">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h2 class="fs-4 mb-3 fw-medium">教育背景</h2>
-                      <p class="text-natural-50">欄位皆為選填</p>
+                <div class="card-body p-0 px-5 px-md-8">
+                  <div class="row border-bottom">
+                    <div
+                      class="col-md-3 d-flex justify-content-between d-md-block"
+                    >
+                      <h2 class="fs-md-4 fs-5 mb-md-3 mb-4 fw-medium">
+                        教育背景
+                      </h2>
+                      <p class="fs-14 text-natural-50">欄位皆為選填</p>
                     </div>
+
                     <div class="col-md-9">
                       <!-- 學歷背景（最多500字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1411,7 +1641,7 @@
                         </div>
                       </div>
                       <!-- 專業培訓與工作坊（最多500字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1426,7 +1656,7 @@
                         </div>
                       </div>
                       <!-- 語文能力（最多300字） -->
-                      <div class="mb-md-5">
+                      <div class="mb-md-5 mb-4">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1439,7 +1669,7 @@
                         </div>
                       </div>
                       <!-- 資格證照（最多300字） -->
-                      <div class="mb-md-8">
+                      <div class="mb-md-8 mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1454,23 +1684,25 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12">
-                      <div class="text-center">
+                    <div class="col-12 mb-md-8 mb-5">
+                      <div
+                        class="d-flex flex-column flex-md-row justify-content-md-center"
+                      >
                         <button
                           type="button"
-                          class="fs-7 btn btn-outline-natural-90 btn-lg py-3 d-inline-flex align-button text-black me-5"
+                          class="fs-7 fs-14 btn btn-outline-natural-90 btn-lg py-3 d-inline-flex justify-content-center align-items-center text-black me-md-5 mb-4 mb-md-0"
                           data-bs-toggle="modal"
                           data-bs-target="#change-password"
                         >
-                          匯出 PDF<span class="material-symbols-outlined ms-1">
+                          儲存更新<span class="material-symbols-outlined ms-1">
                             chevron_right
                           </span>
                         </button>
                         <button
                           type="button"
-                          class="btn btn-black btn-lg py-3 fs-7 d-inline-flex align-button border"
+                          class="btn btn-black btn-lg py-3 fs-7 fs-14 d-inline-flex justify-content-center align-items-center border"
                         >
-                          儲存更新<span class="material-symbols-outlined ms-1">
+                          匯出 PDF<span class="material-symbols-outlined ms-1">
                             chevron_right
                           </span>
                         </button>
@@ -1484,6 +1716,7 @@
         </div>
       </div>
     </main>
+    <%- include('./layout/footer')-%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
