@@ -5,7 +5,7 @@ const swiper = new Swiper(".intro-swiper", {
   //桌機
   breakpoints: {
     768: {
-      slidesPerView: 2.3,
+      slidesPerView: 2,
       spaceBetween: 24,
     },
   },

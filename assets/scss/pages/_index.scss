@@ -1,3 +1,4 @@
+// banner背景
 .bg-hero {
   background-image: url("../images/index/gradient-ball.png");
   background-repeat: no-repeat;
@@ -5,12 +6,18 @@
   background-size: contain;
 }
 
+//story背景
 .story {
   background: linear-gradient(to top, $natural-95 25%, transparent 25%);
   background-color: $white;
 }
+
+swiper-wrapper {
+  height: auto !important;
+}
+
 .swiper-slide {
-  height: auto;
+  height: 100%;
 }
 
 .swiper-slide .card {
@@ -18,6 +25,7 @@
   min-height: 100%;
 }
 
+// workway
 .work-havor {
   .work-overlay {
     background-color: #141a1f80;
@@ -34,16 +42,19 @@
   }
 }
 
+//負值
 .mb-20px {
   margin-bottom: -20px;
 }
 
+//線
 .line-divider {
   height: 1px;
   background-color: $natural-85;
   width: 72%;
 }
 
+//partner
 .partner {
   background-image: url("../images/index/gradient-ball.png");
   background-repeat: no-repeat;
@@ -51,10 +62,12 @@
   background-size: contain;
 }
 
+//service
 .service {
   background-color: $primary;
 }
 
+//qa
 .bg-qa {
   background-image: url("../images/index/bg-grid.png");
   background-repeat: repeat;
@@ -62,6 +75,38 @@
   background-size: contain;
 }
 
-.border-bottom-dashed {
-  border-bottom: 1px dashed $white;
+//響應式
+@media (max-width: 768px) {
+  .bg-hero {
+    background-image: url("../images/index/gradient-ball.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+  .btn-start {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .boywhy {
+    display: none;
+  }
+  .line-divider {
+    display: none;
+  }
+  .btn-more {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px !important;
+    line-height: 1.2;
+  }
+  .runboy {
+    display: none;
+  }
 }

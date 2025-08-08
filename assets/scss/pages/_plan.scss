@@ -1,4 +1,5 @@
-.plan-about-intro {
+//plan&about banner
+.about-intro {
   background-image: url("../images/plan/banner-person.svg"),
     url("../images/plan/banner-bg-pc.png");
   background-repeat: no-repeat, no-repeat;
@@ -7,6 +8,7 @@
   background-size: auto, cover;
 }
 
+//hot 選取器
 .plan-lab {
   border: 2px solid transparent;
   position: relative;
@@ -35,22 +37,53 @@
   }
 }
 
+//.plan-consult
 .plan-consult {
   background-color: $natural-95;
 }
-
 .mt-120 {
   margin-top: 120px;
 }
 
+//subscription
 .subscription {
   background: linear-gradient(to bottom, $natural-95 50%, transparent 50%);
   background-color: $white;
 }
-
+//subscription背景
 .card-cloud-content {
   background-image: url("../images/plan/subscribe-3.svg"); /* 雲朵 SVG 圖片路徑 */
   background-repeat: no-repeat;
   background-position: right top; /* 讓雲朵底部對齊容器底部 */
   background-size: 72% auto; /* 寬度100%，高度自動調整 */
+}
+
+//響應式
+@media (max-width: 1024px) {
+  .about-intro {
+    background-image: url("../images/plan/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .subscribe-1,
+  .subscribe-2 {
+    display: none;
+  }
+  .card-cloud-content {
+    background-image: url("../images/plan/subscribe-3.svg"); /* 雲朵 SVG 圖片路徑 */
+    background-repeat: no-repeat;
+    background-position: right top; /* 讓雲朵底部對齊容器底部 */
+    background-size: 150% auto; /* 寬度100%，高度自動調整 */
+  }
+}
+
+@media (max-width: 991px) {
+  .plan-1,
+  .plan-2,
+  .plan-3 {
+    display: none;
+  }
 }
